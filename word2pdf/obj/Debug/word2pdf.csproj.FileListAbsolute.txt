@@ -4,3 +4,9 @@ C:\Users\Tanandara\Desktop\Word2PDF\word2pdf\word2pdf\bin\Debug\word2pdf.exe
 C:\Users\Tanandara\Desktop\Word2PDF\word2pdf\word2pdf\bin\Debug\word2pdf.pdb
 C:\Users\Tanandara\Desktop\Word2PDF\word2pdf\word2pdf\obj\Debug\word2pdf.exe
 C:\Users\Tanandara\Desktop\Word2PDF\word2pdf\word2pdf\obj\Debug\word2pdf.pdb
+C:\Users\Tanandara\Desktop\project\Word2PDF\word2pdf\word2pdf\bin\Debug\word2pdf.exe.config
+C:\Users\Tanandara\Desktop\project\Word2PDF\word2pdf\word2pdf\obj\Debug\word2pdf.exe
+C:\Users\Tanandara\Desktop\project\Word2PDF\word2pdf\word2pdf\obj\Debug\word2pdf.pdb
+C:\Users\Tanandara\Desktop\project\Word2PDF\word2pdf\word2pdf\bin\Debug\word2pdf.exe
+C:\Users\Tanandara\Desktop\project\Word2PDF\word2pdf\word2pdf\bin\Debug\word2pdf.pdb
+C:\Users\Tanandara\Desktop\project\Word2PDF\word2pdf\word2pdf\obj\Debug\word2pdf.csprojResolveAssemblyReference.cache

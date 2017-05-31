@@ -20,18 +20,31 @@ namespace word2pdf
             string filepath = Directory.GetCurrentDirectory(); // ดึง path ปัจจุบัน
             DirectoryInfo d = new DirectoryInfo(filepath); // ดึงค่าจาก folder
 
-            // ลูป docx -> pdf
-            foreach (var file in d.GetFiles("*.docx"))
+            try
             {
-                Console.WriteLine("Converting : " + file.Name);
-                Application appWord = new Application();
+                // ลูป docx -> pdf
+                foreach (var file in d.GetFiles("*.docx"))
+                {
+                    Console.WriteLine("Converting : " + file.Name);
+                    Application appWord = new Application();
 
-                // เปิดไฟล์ word
-                wordDocument = appWord.Documents.Open(filepath + "\\" + file.Name); 
+                    // เปิดไฟล์ word
+                    wordDocument = appWord.Documents.Open(filepath + "\\" + file.Name);
 
-                // convert ไฟล์
-                wordDocument.ExportAsFixedFormat(filepath + "\\" + Path.GetFileNameWithoutExtension(file.Name) + ".pdf", WdExportFormat.wdExportFormatPDF); 
+                    // convert ไฟล์
+                    wordDocument.ExportAsFixedFormat(filepath + "\\" + Path.GetFileNameWithoutExtension(file.Name) + ".pdf", WdExportFormat.wdExportFormatPDF);
+
+                    // ปิด
+                    wordDocument.Close();
+                    appWord.Quit();
+
+                }
             }
+            catch (Exception)
+            {
+                throw;
+            }
+            
             Console.WriteLine("======= Finish ========");
             Console.ReadKey();
         }
